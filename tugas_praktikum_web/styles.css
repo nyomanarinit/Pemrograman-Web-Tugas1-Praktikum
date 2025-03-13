@@ -1,0 +1,226 @@
+/* ======= Umum ======= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('foto/bg.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= Navbar ======= */
+.navbar {
+    background-color: #fdfeff;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3); /* Shadow warna oranye */
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffa500 !important;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffa500 !important;
+}
+
+/* ======= Styling Header ======= */
+header {
+    background: url('foto/bg.jpg') no-repeat center center/cover;
+}
+
+/* ======= Badge ======= */
+.badge {
+    font-size: 1rem;
+}
+
+/* ======= Nama ======= */
+.hardername {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* ======= Deskripsi ======= */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ======= Tombol ======= */
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* ======= Gambar Profil ======= */
+img {
+    border: 5px solid #ffc107;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Kolom agar center tapi teks tetap rata kiri ======= */
+.container .row {
+    justify-content: center;
+}
+.container .row .col-md-6 {
+    text-align: left;
+    padding: 40px 30px 20px 10px;
+}
+
+/* ======= Tentang ======= */
+#tentang {
+    padding: 80px 0;
+    text-align: left;
+}
+#tentang h1 {
+    font-size: 2.5rem;
+    color: #212529;
+}
+#tentang h3 {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+#tentang img {
+    border-radius: 50%;
+    border: 5px solid #ffa500;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Pendidikan & Pengalaman ======= */
+section {
+    padding: 60px 0;
+}
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.text-warning {
+    color: #ffa500 !important;
+}
+
+.pendidikan-pengalaman {
+    border-radius: 40px 40px 0 0;
+    margin-top: -10px; 
+    margin-bottom: -60px;
+    padding-top: 0;
+}
+
+#pendidikan-pengalaman h2 {
+    font-weight: 700;
+    margin-top: -50px;
+    margin-bottom: -10px;
+}
+
+#pengalaman h6, h5 {
+    font-weight: 700;
+}
+
+#pendidikan-pengalaman .card {
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.list-pendidikan br {
+    font-size: small;
+}
+.list-pengalaman li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.list-pengalaman h6 {
+    font-weight: bold;
+    display: inline;
+}
+
+/* ======= Sertifikat ======= */
+#sertifikat {
+    padding-top: 2rem;
+    margin-bottom: 20px;
+}
+#sertifikat h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* ======= Efek Hover & Klik untuk Kontak ======= */
+#kontak {
+    padding-top: 5rem; 
+}
+#kontak a {
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+#kontak a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+#kontak h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ======= Efek Hover untuk Sertifikat & Pengalaman ======= */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ======= Gambar dalam Card ======= */
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+img {
+    border-radius: 0;
+}
+
+/* ======= Lightbox (Efek Fullscreen Gambar) ======= */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.lightbox:target {
+    display: flex;
+}
+
+/* ======= Footer ======= */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+}
